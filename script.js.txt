@@ -1,0 +1,17 @@
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita o envio do formulário
+
+    // Obtenha os valores do usuário e da senha
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    // Aqui você pode adicionar a lógica de validação do usuário e senha
+    // Por exemplo, verificar se o usuário e a senha correspondem a um conjunto válido de credenciais
+
+    // Exemplo simples de verificação
+    if (username === 'usuario' && password === 'senha') {
+        alert('Login bem sucedido!');
+    } else {
+        alert('Usuário ou senha incorretos.');
+    }
+});
